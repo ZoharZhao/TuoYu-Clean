@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorSecondary">@color/text_dim</item>
+    </style>
+
+    <style name="Card">
+        <item name="android:background">@drawable/bg_card</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_dim</item>
+    </style>
+
+    <style name="Value">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_dim</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+</resources>

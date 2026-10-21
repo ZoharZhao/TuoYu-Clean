@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tuoyu.clean">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- bottom safe area: overlay strip + Shizuku's container provider -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Shizuku hands its binder to apps holding this; Shizuku's own permission
+         screen lists apps that declare it -->
+    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
+
+    <queries>
+        <package android:name="moe.shizuku.privileged.api" />
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+        tools:ignore="UnusedAttribute">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize|keyboardHidden|uiMode|layoutDirection|locale|fontScale">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- shortcuts are published dynamically (labels follow the state),
+                 so no static android.app.shortcuts meta-data here -->
+        </activity>
+
+        <!-- watches the foreground app and shrinks/restores the display -->
+
+
+        <!-- serves the bundled Shizuku APK to the system installer -->
+        <provider
+            android:name=".InstallProvider"
+            android:authorities="com.tuoyu.clean.install"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+        <!-- Shizuku's container: required so the Shizuku app can bind to us -->
+        <provider
+            android:name="rikka.shizuku.ShizukuProvider"
+            android:authorities="com.tuoyu.clean.shizuku"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="false"
+            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    
+        <!-- headless target for the launcher shortcuts: no UI, just the action -->
+        <activity
+            android:name=".ShortcutActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+<!-- local DNS filter: a tun that only routes the fake resolver -->
+    <service
+        android:name=".AdBlockVpnService"
+        android:exported="false"
+        android:permission="android.permission.BIND_VPN_SERVICE"
+        android:foregroundServiceType="specialUse">
+        <intent-filter>
+            <action android:name="android.net.VpnService" />
+        </intent-filter>
+        <property
+            android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+            android:value="Local DNS ad filter" />
+    </service>
+
+</application>
+</manifest>

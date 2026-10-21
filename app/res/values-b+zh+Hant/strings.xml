@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">托予淨化</string>
+
+    <string name="title">螢幕常亮</string>
+    <string name="subtitle">每一項都可以單獨開關</string>
+    <string name="subtitle_no_perm">需要一次授權後才能修改系統設定</string>
+
+    <string name="state_unknown">未授權</string>
+
+    <string name="appearance">外觀</string>
+    <string name="theme_system">跟隨系統</string>
+    <string name="theme_light">日間</string>
+    <string name="theme_dark">夜間</string>
+
+    <string name="summary_title">目前狀態</string>
+    <string name="section_switches">單獨設定</string>
+
+    <string name="power_held">螢幕保持點亮</string>
+    <string name="power_timeout_forever">螢幕逾時：永久（不會自動熄滅）</string>
+    <string name="power_timeout_only">依系統逾時熄滅</string>
+    <string name="power_timeout">螢幕逾時：%1$s</string>
+
+    <string name="sw_timeout">螢幕常亮</string>
+    <string name="sw_timeout_tip">開啟後螢幕不會自動熄滅</string>
+    <string name="sw_timeout_tip_off">目前會在 %1$s 後自動熄滅</string>
+    <string name="sw_dim">自動變暗</string>
+    <string name="sw_dim_tip">系統提前把螢幕調暗以省電</string>
+
+    <string name="value_on">已開啟</string>
+    <string name="value_off">未開啟</string>
+    <string name="value_forever">永久</string>
+    <string name="unit_min"> 分鐘</string>
+    <string name="unit_sec"> 秒</string>
+    <string name="unit_ms"> 毫秒</string>
+
+    <string name="private_denied">系統不允許 App 寫入私有設定 dim_screen，點開關只會有提示；螢幕常亮不受影響。</string>
+    <string name="desc_unknown">需要一次 adb 授權才能修改系統設定，指令見下方按鈕。</string>
+
+    <string name="refresh">螢幕狀態重新整理</string>
+    <string name="grant">查看授權指令</string>
+
+    <string name="author">作者：趙文賢</string>
+    <string name="contact">聯絡信箱：stzwxsir@gmail.com</string>
+
+    <string name="dialog_title">一次性授權</string>
+    <string name="dialog_body">本應用需要「修改系統設定」權限來調整螢幕逾時。
+
+推薦：在 Shizuku 中授權本應用，應用會自動完成授權，完全不需要電腦。
+
+若尚未安裝 Shizuku，也可用 USB 連接電腦，執行下面的命令一次。</string>
+    <string name="copy">複製指令</string>
+    <string name="copied">指令已複製</string>
+    <string name="recheck">我已執行，重新檢測</string>
+    <string name="cancel">取消</string>
+
+    <string name="toast_refreshed">已重新整理</string>
+    <string name="toast_cannot_write">寫入失敗，請確認權限仍有效</string>
+    <string name="toast_private_denied">系統不允許 App 修改私有設定 dim_screen</string>
+
+    <string name="sc_timeout_turn_on">開啟螢幕常亮</string>
+    <string name="sc_timeout_turn_off">關閉螢幕常亮</string>
+    <string name="sc_timeout_turn_on_long">開啟螢幕常亮（取消自動熄滅）</string>
+    <string name="sc_timeout_turn_off_long">關閉螢幕常亮（恢復自動熄滅）</string>
+    <string name="sc_dim_turn_on">開啟自動變暗</string>
+    <string name="sc_dim_turn_off">關閉自動變暗</string>
+    <string name="sc_dim_turn_on_long">開啟自動變暗 dim_screen</string>
+    <string name="sc_dim_turn_off_long">關閉自動變暗 dim_screen</string>
+
+    <!-- ===================== 底部安全區（Shizuku） ===================== -->
+    <string name="sa_section">底部安全區</string>
+    <string name="sa_master">啟用底部安全區</string>
+    <string name="sa_master_tip">縮小系統顯示區，在底部留出一條安全邊距</string>
+    <string name="sa_needs_shizuku">底部安全區需要 Shizuku 授權後才能使用</string>
+
+    <string name="sa_shizuku_title">Shizuku</string>
+    <string name="sa_shizuku_not_installed">未安裝 Shizuku。請先安裝 Shizuku 並啟動服務。</string>
+    <string name="sa_shizuku_not_running">Shizuku 服務未執行。請開啟 Shizuku 應用，依提示啟動服務。</string>
+    <string name="sa_shizuku_no_permission">Shizuku 已執行，但本應用尚未取得授權。</string>
+    <string name="sa_shizuku_ready">Shizuku 已連線，權限有效。</string>
+    <string name="sa_request_permission">去授權</string>
+    <string name="sa_open_shizuku">開啟 Shizuku</string>
+    <string name="sa_recheck">重新檢測</string>
+    <string name="sa_permission_granted">Shizuku 授權成功</string>
+    <string name="sa_permission_denied">Shizuku 授權被拒絕</string>
+
+    <string name="sa_locked_hint">未取得 Shizuku 授權，功能已鎖定</string>
+
+    <string name="sa_height">安全區高度</string>
+    <string name="sa_height_value">%1$d dp</string>
+    <string name="sa_color">安全區顏色</string>
+    <string name="sa_color_black">黑色</string>
+    <string name="sa_color_white">白色</string>
+    <string name="sa_color_system">跟隨系統</string>
+
+    <string name="sa_apps_title">生效的應用</string>
+    <string name="sa_apps_all">全選</string>
+    <string name="sa_apps_none">全不選</string>
+    <string name="sa_apps_count">已選 %1$d / %2$d</string>
+    <string name="sa_apps_loading">正在讀取應用清單…</string>
+
+    <string name="sa_status_idle">未啟用</string>
+    <string name="sa_status_shrunk">已縮屏：%1$s</string>
+    <string name="sa_status_full">已還原：%1$s</string>
+    <string name="sa_status_fg">前景：%1$s</string>
+    <string name="sa_status_fg_self">前景：本應用</string>
+
+    <string name="sa_apply_now">立即套用</string>
+    <string name="sa_reset_now">還原原樣</string>
+    <string name="sa_toast_applied">已套用</string>
+    <string name="sa_toast_reset">已還原</string>
+    <string name="sa_toast_failed">執行失敗：%1$s</string>
+    <string name="sa_overlay_permission">未授予懸浮視窗權限，底部色帶無法繪製（縮屏仍然有效）</string>
+    <string name="sa_grant_overlay">去開啟懸浮視窗權限</string>
+
+    <string name="sa_diag_title">技術說明</string>
+    <string name="sa_diag_body">wm size 只能整體縮小邏輯顯示區，系統不會在底部留下黑邊；本應用在縮小顯示區的同時，用懸浮視窗把空出的那條區域塗成指定顏色，由此得到真正的底部安全區。因為沒有針對單一應用靜默改解析度的能力，勾選的應用到前景時才縮屏，切到未勾選的應用立刻還原。</string>
+    <string name="sa_shizuku_waiting">Shizuku 服務已啟動，但尚未把連線交給本應用；點下方按鈕開啟 Shizuku 授權，然後回到本頁點「重新檢測」。</string>
+    <string name="sa_request_sent">已向 Shizuku 發出授權請求，請在彈窗中允許</string>
+
+    <!-- ===== bundled Shizuku installer ===== -->
+    <string name="sa_install_title">安裝 Shizuku</string>
+    <string name="sa_install_body">本機尚未安裝 Shizuku，底部安全區需要它來執行系統指令。\n\nShizuku 的用法：\n1. 安裝後開啟 Shizuku，依它自己的引導用「無線偵錯」配對並啟動服務；\n2. 回到本應用點「去授權」，在 Shizuku 彈窗中允許；\n3. 授權後本頁會自動變成可用。\n\n具體配對與啟動步驟請以 Shizuku 應用內的說明為準。\n\n是否現在安裝隨應用內建的 Shizuku（%1$s）？</string>
+    <string name="sa_install_yes">內建安裝</string>
+    <string name="sa_install_go_store">用應用商店</string>
+    <string name="sa_install_failed">無法調起安裝：%1$s</string>
+    <string name="sa_install_started">已調起安裝，請依提示完成</string>
+
+    <!-- ===== tab bar / strip colour ===== -->
+    <string name="tab_home">螢幕控制</string>
+    <string name="tab_area">去廣告</string>
+    <string name="sa_color_transparent">透明（露出桌布）</string>
+
+    <!-- ===== accessibility strip (route B) ===== -->
+    <string name="a11y_label">Keep Awake 安全區</string>
+    <string name="a11y_summary">用於在螢幕最底部繪製安全區色帶</string>
+    <string name="a11y_description">只在螢幕最底部繪製一條安全區色帶。不讀取、不操作螢幕上的任何內容。</string>
+    <string name="sa_access_settings">去開啟無障礙</string>
+    <string name="sa_access_active">無障礙已開啟，色帶可畫到螢幕最底部</string>
+    <string name="sa_access_inactive">未開啟無障礙：僅在縮屏後由系統底部填充（選非透明顏色需要它）</string>
+    <string name="sa_route_a_hint">目前為純縮屏模式：應用內容整體上移，底部由系統填充</string>
+    <string name="sa_apps_subtitle">勾選的應用到前景時會留出底部安全區</string>
+    <string name="sa_nav_height_label">導覽列高度（安全區）</string>
+    <string name="sa_block_no_shizuku">需要先安裝 Shizuku：底部安全區要透過 Shizuku 修改系統設定</string>
+    <string name="sa_block_shizuku_stopped">Shizuku 服務未執行：請在 Shizuku 應用程式裡啟動服務後重試</string>
+    <string name="sa_block_no_permission">尚未授予 Shizuku 權限：請在彈窗中點擊「允許」</string>
+    <string name="sa_block_three_button">請先切換到手勢導覽：三鍵導覽下加高導覽列會蓋住按鈕</string>
+    <string name="wechat">微信號：zwx-daylight</string>
+    <string name="sc_toggle_short">開關安全區</string>
+    <string name="sc_toggle_long">快速開關底部安全區</string>
+    <string name="sc_desktop_short">桌面不加高</string>
+    <string name="sc_desktop_long">桌面上保持原樣（其他應用仍加高）</string>
+    <string name="sc_area_turn_on">關閉系統廣告</string>
+    <string name="sc_area_turn_on_long">開啟廣告攔截，關閉系統廣告</string>
+    <string name="sc_area_turn_off">關閉廣告攔截</string>
+    <string name="sc_area_turn_off_long">關閉廣告攔截，恢復系統廣告</string>
+    <string name="sc_desktop_exclude">桌面不加高</string>
+    <string name="sc_desktop_exclude_long">只讓桌面保持原樣</string>
+    <string name="sc_desktop_keep_on">桌面也加高</string>
+    <string name="sc_desktop_keep_on_long">讓桌面也加上安全區</string>
+    <string name="sc_desktop_excluded_toast">已設定：桌面不加高</string>
+    <string name="sc_desktop_included_toast">已設定：桌面也加高</string>
+    <string name="sa_channel">底部安全區</string>
+    <string name="sa_notif_on">已開啟，點此暫時關閉</string>
+    <string name="sa_notif_off">已關閉</string>
+    <string name="sa_notif_action_on">開啟</string>
+    <string name="sa_notif_action_off">關閉</string>
+    <string name="sa_state_ok">Shizuku 已連線，權限有效。</string>
+    <string name="sa_state_unknown">正在偵測 Shizuku…</string>
+    <string name="sa_state_not_installed">未安裝 Shizuku。需要它才能修改系統設定。</string>
+    <string name="sa_state_waiting">Shizuku 服務未啟動，請在 Shizuku 應用程式中啟動。</string>
+    <string name="sa_state_no_permission">尚未授予 Shizuku 權限，請點下面的按鈕授權。</string>
+    <string name="sa_master_sub">加高導覽列，讓介面不貼底</string>
+    <string name="state_off">未開啟</string>
+    <string name="state_on">已開啟</string>
+    <string name="toast_need_permission">需要先授予修改系統設定的權限</string>
+    <string name="toast_applied">已套用</string>
+    <string name="sa_notif_on_plain">底部安全區已開啟</string>
+    <string name="power_forever">永久（不會自動熄滅）</string>
+    <string name="power_minutes">%1$d 分鐘</string>
+    <string name="power_seconds">%1$d 秒</string>
+    <string name="sa_status_on">已開啟</string>
+    <string name="sa_line_title">隱藏手勢提示線</string>
+    <string name="sa_line_sub">移除底部那條橫線，底部更乾淨</string>
+    <string name="sa_line_auto_off">已恢復手勢提示線：隱藏它會讓系統取消底部空間，安全區無法生效</string>
+    <string name="sa_area_auto_off">已關閉底部安全區：兩者不能同時生效</string>
+    <string name="sa_custom_height">安全區高度</string>
+    <string name="sa_height_system">系統預設</string>
+    <string name="ad_title">系統去廣告</string>
+    <string name="ad_section">廣告攔截</string>
+    <string name="ad_master">一鍵關閉系統廣告</string>
+    <string name="ad_master_sub">本機攔截廣告網域，不經過任何伺服器</string>
+    <string name="ad_status_on">已開啟，廣告網域解析到 0.0.0.0</string>
+    <string name="ad_status_off">未開啟</string>
+    <string name="ad_dns_label">本機攔截</string>
+    <string name="ad_needs_shizuku">需要 Shizuku 才能修改系統設定</string>
+    <string name="ad_toast_on">已開啟：系統廣告網域已攔截</string>
+    <string name="ad_toast_off">已恢復：廣告攔截已關閉</string>
+    <string name="ad_note">透過本機 VPN 攔截小米廣告網域，並關閉負一屏推薦與個人化廣告。不經過任何伺服器。應用內廣告請用 GKD。</string>
+    <string name="ad_blocked_title">已攔截項目</string>
+    <string name="ad_row_hosts">廣告投放網域</string>
+    <string name="ad_row_track">追蹤上報網域</string>
+    <string name="ad_row_switches">MIUI 推薦開關</string>
+    <string name="ad_count_unit"> 個</string>
+    <string name="ad_verify">驗證攔截效果</string>
+    <string name="ad_verifying">正在驗證…</string>
+    <string name="ad_verify_title">攔截驗證結果</string>
+    <string name="ad_verify_summary">已攔截 %1$d / %2$d 個網域</string>
+    <string name="ad_verify_normal_ok">正常網站（www.baidu.com）解析正常，上網不受影響。</string>
+    <string name="ad_verify_normal_bad">注意：正常網站解析異常，請稍後再試。</string>
+    <string name="ad_reboot_title">建議重啟一次</string>
+    <string name="ad_reboot_msg">廣告攔截已開啟。建議重啟手機一次，讓所有應用重新取得 DNS 設定，攔截效果更徹底。</string>
+    <string name="ad_reboot_later">稍後再說</string>
+    <string name="power_forever_head">永久</string>
+    <string name="power_forever_sub">不會自動熄滅</string>
+    <string name="power_timed_sub">到達此時間後螢幕自動熄滅</string>
+    <string name="gkd_section">應用內廣告</string>
+    <string name="gkd_title">GKD 去廣告</string>
+    <string name="gkd_desc">開屏廣告、彈窗廣告交給 GKD 處理。本應用已內嵌 v%s，可直接安裝。</string>
+    <string name="gkd_install">一鍵安裝 GKD</string>
+    <string name="gkd_installed">GKD 已安裝（%s）</string>
+    <string name="gkd_copy_sub">複製訂閱連結</string>
+    <string name="gkd_copied">訂閱連結已複製</string>
+    <string name="gkd_install_failed">安裝失敗：%s</string>
+    <string name="gkd_note">本应用不提供 GKD 使用教程，请自行探索。
+官网：https://gkd.li/</string>
+    <string name="gkd_warn">提示：安裝時若彈出「網路異常」風險提示，點「繼續」即可——廣告攔截同時擋掉了 MIUI 安裝器的聯網檢測。</string>
+    <string name="env_zhuoyi_title">相容性提示</string>
+    <string name="env_zhuoyi_msg">偵測到本應用執行在「卓易通」環境中。
+
+卓易通是鴻蒙上的安卓虛擬環境，Shizuku 等系統級功能可能無法正常運作。
+
+若功能異常，建議在手機本機系統中直接安裝使用。</string>
+    <string name="ad_not_applicable">目前系統不適用</string>
+    <string name="sa_shizuku_note">本應用不提供 Shizuku 使用教學，請自行探索。
+官網：https://shizuku.rikka.app/</string>
+    <string name="ad_err_unreachable">目前網路無法連線廣告攔截伺服器，請更換網路後重試（未修改任何設定）</string>
+    <string name="ad_err_broken">廣告攔截伺服器連線不穩定，已自動恢復原有設定</string>
+    <string name="sa_authorize">授權 Shizuku</string>
+    <string name="sa_start_service">Shizuku 服務未執行，請先在 Shizuku 中啟動服務</string>
+    <string name="ad_err_unreachable_rec">目前網路無法連線廣告攔截伺服器（可能被電信商攔截）。已關閉 MIUI 推薦開關，DNS 攔截未啟用——開啟代理後可重試。</string>
+    <string name="ad_force_title">仍然嘗試開啟？</string>
+    <string name="ad_force_msg">目前網路偵測不到廣告攔截伺服器（dns.adguard.com:443）。
+
+如果你正在使用代理，可能仍能連線成功。
+
+若伺服器確實無法連線，系統會在幾秒後自動恢復原設定，不影響上網。</string>
+    <string name="ad_force_yes">仍然開啟</string>
+    <string name="ad_force_no">取消</string>
+    <string name="vpn_noti_title">本機廣告攔截</string>
+    <string name="vpn_noti_text">正在攔截 %1$d 個廣告網域</string>
+    <string name="vpn_starting">正在啟動本機攔截…</string>
+    <string name="vpn_stopping">已關閉本機攔截</string>
+    <string name="vpn_denied">未授予 VPN 權限，攔截無法啟動</string>
+    <string name="ad_big_title">完整攔截清單</string>
+    <string name="ad_big_sub">約 19 萬條網域，覆蓋更廣（實驗性）</string>
+    <string name="ad_big_loading">正在載入清單…</string>
+    <string name="ad_big_ready">清單已載入：%1$d 條</string>
+    <string name="ad_big_off">已關閉完整清單</string>
+    <string name="sc_turned_off">已關閉</string>
+    <string name="ad_limit_note">部分廣告（如日曆、天氣中的自有廣告位）無法透過網路層攔截，請搭配 GKD 處理，或在對應應用的設定中關閉推薦。</string>
+    <string name="sa_install">安裝 Shizuku</string>
+    <string name="guide_title">先完成一次設定</string>
+    <string name="guide_body">「螢幕控制」需要修改系統設定才能生效。
+
+推薦安裝 Shizuku：裝好後在本應用裡點一下授權即可，全程不需要電腦。</string>
+    <string name="guide_hint">Shizuku 是一個開源的授權工具，已內嵌在本應用裡，點擊下方按鈕即可安裝。</string>
+    <string name="guide_install_shizuku">安裝 Shizuku</string>
+    <string name="guide_other_way">其它方式</string>
+    <string name="guide_later">稍後</string>
+    <string name="guide_manual_title">用電腦授權</string>
+    <string name="guide_manual_body">如果不想安裝 Shizuku，也可以連接電腦執行下面這條命令，一次即可。</string>
+    <string name="block_no_shizuku">還沒安裝 Shizuku，請點上方「安裝 Shizuku」</string>
+    <string name="block_service_stopped">Shizuku 服務未執行，請開啟 Shizuku 點「啟動」</string>
+    <string name="block_not_authorized">請點上方「授權 Shizuku」完成一次授權</string>
+    <string name="block_unknown">寫入系統設定失敗，請稍後重試</string>
+    <string name="guide_body_installed">「螢幕控制」需要修改系統設定才能生效。
+
+Shizuku 已安裝，請在 Shizuku 中點「啟動」開啟服務，然後回到本應用點「授權 Shizuku」。</string>
+    <string name="guide_hint_installed">服務啟動後，本應用會自動完成授權，不需要電腦。</string>
+    <string name="guide_open_shizuku">開啟 Shizuku</string>
+</resources>

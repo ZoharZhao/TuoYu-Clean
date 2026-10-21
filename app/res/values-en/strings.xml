@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TuoYu Clean</string>
+
+    <string name="title">Keep screen on</string>
+    <string name="subtitle">Every item can be switched on its own</string>
+    <string name="subtitle_no_perm">One-time permission is needed to change system settings</string>
+
+    <string name="state_unknown">Not granted</string>
+
+    <string name="appearance">Appearance</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <string name="summary_title">CURRENT STATE</string>
+    <string name="section_switches">INDIVIDUAL SETTINGS</string>
+
+    <string name="power_held">Screen is kept awake</string>
+    <string name="power_timeout_forever">Screen timeout: never (screen will not turn off)</string>
+    <string name="power_timeout_only">Turns off at the system timeout</string>
+    <string name="power_timeout">Screen timeout: %1$s</string>
+
+    <string name="sw_timeout">Keep screen awake</string>
+    <string name="sw_timeout_tip">The screen will not turn off by itself</string>
+    <string name="sw_timeout_tip_off">Currently turns off after %1$s</string>
+    <string name="sw_dim">Auto dim</string>
+    <string name="sw_dim_tip">The system dims the screen early to save power</string>
+
+    <string name="value_on">On</string>
+    <string name="value_off">Off</string>
+    <string name="value_forever">Never</string>
+    <string name="unit_min"> min</string>
+    <string name="unit_sec"> s</string>
+    <string name="unit_ms"> ms</string>
+
+    <string name="private_denied">The system does not allow the app to write the private setting dim_screen; tapping the switch only shows a hint. Keeping the screen awake is not affected.</string>
+    <string name="desc_unknown">One adb grant is needed before system settings can be changed; the command is behind the button below.</string>
+
+    <string name="refresh">Refresh screen status</string>
+    <string name="grant">Show grant command</string>
+
+    <string name="author">Author: Zhao Wenxian</string>
+    <string name="contact">Email: stzwxsir@gmail.com</string>
+
+    <string name="dialog_title">One-time grant</string>
+    <string name="dialog_body">This app needs WRITE_SECURE_SETTINGS to change the screen timeout.
+
+Recommended: authorise this app in Shizuku and it grants itself automatically, no computer needed.
+
+Otherwise connect USB and run the command below once.</string>
+    <string name="copy">Copy command</string>
+    <string name="copied">Command copied</string>
+    <string name="recheck">I ran it, check again</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="toast_refreshed">Refreshed</string>
+    <string name="toast_cannot_write">Write failed, please check the permission</string>
+    <string name="toast_private_denied">The system does not allow apps to change dim_screen</string>
+
+    <string name="sc_timeout_turn_on">Turn screen-awake on</string>
+    <string name="sc_timeout_turn_off">Turn screen-awake off</string>
+    <string name="sc_timeout_turn_on_long">Keep the screen awake (cancel the auto-off timer)</string>
+    <string name="sc_timeout_turn_off_long">Stop keeping the screen awake (restore the timer)</string>
+    <string name="sc_dim_turn_on">Turn auto dim on</string>
+    <string name="sc_dim_turn_off">Turn auto dim off</string>
+    <string name="sc_dim_turn_on_long">Enable auto dim (dim_screen)</string>
+    <string name="sc_dim_turn_off_long">Disable auto dim (dim_screen)</string>
+
+    <!-- ===================== bottom safe area (Shizuku) ===================== -->
+    <string name="sa_section">Bottom safe area</string>
+    <string name="sa_master">Enable bottom safe area</string>
+    <string name="sa_master_tip">Shrinks the system display to free a safety strip at the bottom</string>
+    <string name="sa_needs_shizuku">The bottom safe area needs a Shizuku grant</string>
+
+    <string name="sa_shizuku_title">Shizuku</string>
+    <string name="sa_shizuku_not_installed">Shizuku is not installed. Install it and start the service first.</string>
+    <string name="sa_shizuku_not_running">The Shizuku service is not running. Open Shizuku and start the service.</string>
+    <string name="sa_shizuku_no_permission">Shizuku is running, but this app has no grant yet.</string>
+    <string name="sa_shizuku_ready">Shizuku connected, permission is valid.</string>
+    <string name="sa_request_permission">Grant</string>
+    <string name="sa_open_shizuku">Open Shizuku</string>
+    <string name="sa_recheck">Check again</string>
+    <string name="sa_permission_granted">Shizuku permission granted</string>
+    <string name="sa_permission_denied">Shizuku permission denied</string>
+
+    <string name="sa_locked_hint">Locked until Shizuku grants access</string>
+
+    <string name="sa_height">Strip height</string>
+    <string name="sa_height_value">%1$d dp</string>
+    <string name="sa_color">Strip colour</string>
+    <string name="sa_color_black">Black</string>
+    <string name="sa_color_white">White</string>
+    <string name="sa_color_system">Follow system</string>
+
+    <string name="sa_apps_title">Apps that get the strip</string>
+    <string name="sa_apps_all">Select all</string>
+    <string name="sa_apps_none">Select none</string>
+    <string name="sa_apps_count">%1$d / %2$d selected</string>
+    <string name="sa_apps_loading">Loading apps…</string>
+
+    <string name="sa_status_idle">Not enabled</string>
+    <string name="sa_status_shrunk">Shrunk: %1$s</string>
+    <string name="sa_status_full">Restored: %1$s</string>
+    <string name="sa_status_fg">Foreground: %1$s</string>
+    <string name="sa_status_fg_self">Foreground: this app</string>
+
+    <string name="sa_apply_now">Apply now</string>
+    <string name="sa_reset_now">Restore</string>
+    <string name="sa_toast_applied">Applied</string>
+    <string name="sa_toast_reset">Restored</string>
+    <string name="sa_toast_failed">Failed: %1$s</string>
+    <string name="sa_overlay_permission">Overlay permission not granted, the strip cannot be painted (the shrink still works)</string>
+    <string name="sa_grant_overlay">Grant overlay permission</string>
+
+    <string name="sa_diag_title">How it works</string>
+    <string name="sa_diag_body">wm size can only shrink the whole logical display, and the platform does not paint the freed area black. This app shrinks the display and draws an overlay over the freed strip, which is what makes the bottom safe area visible. Android cannot change resolution per app silently, so the display is shrunk only while a selected app is in front and restored as soon as an unselected one comes up.</string>
+    <string name="sa_shizuku_waiting">The Shizuku service is running but has not handed its binder to this app yet. Open Shizuku to grant access, then come back and tap "Check again".</string>
+    <string name="sa_request_sent">Permission request sent, allow it in the Shizuku dialog</string>
+
+    <!-- ===== bundled Shizuku installer ===== -->
+    <string name="sa_install_title">Install Shizuku</string>
+    <string name="sa_install_body">Shizuku is not installed on this device, and the bottom safe area needs it to run system commands.\n\nHow Shizuku is used:\n1. Install it, open it, and follow its own guide to pair over wireless debugging and start the service;\n2. Come back here and tap Grant, then allow it in the Shizuku dialog;\n3. This page unlocks automatically once the grant is in place.\n\nFor the exact pairing and start-up steps, follow the instructions inside the Shizuku app.\n\nInstall the Shizuku bundled with this app (%1$s) now?</string>
+    <string name="sa_install_yes">Install bundled</string>
+    <string name="sa_install_go_store">Use an app store</string>
+    <string name="sa_install_failed">Cannot start the installer: %1$s</string>
+    <string name="sa_install_started">Installer opened, please finish it</string>
+
+    <!-- ===== tab bar / strip colour ===== -->
+    <string name="tab_home">Screen</string>
+    <string name="tab_area">Ads</string>
+    <string name="sa_color_transparent">Transparent (shows wallpaper)</string>
+
+    <!-- ===== accessibility strip (route B) ===== -->
+    <string name="a11y_label">Keep Awake safe area</string>
+    <string name="a11y_summary">Draws the bottom safe-area strip</string>
+    <string name="a11y_description">Only draws one strip at the very bottom of the screen. It never reads or operates any on-screen content.</string>
+    <string name="sa_access_settings">Enable accessibility</string>
+    <string name="sa_access_active">Accessibility is on, the strip can reach the real bottom edge</string>
+    <string name="sa_access_inactive">Accessibility is off: the bottom is filled by the system after shrinking (needed for non-transparent colours)</string>
+    <string name="sa_route_a_hint">Shrink-only mode: app content moves up, the bottom is filled by the system</string>
+    <string name="sa_apps_subtitle">Selected apps get the bottom safe area when in front</string>
+    <string name="sa_nav_height_label">Navigation bar height (safe area)</string>
+    <string name="sa_block_no_shizuku">Install Shizuku first: the safe area changes a system setting through it</string>
+    <string name="sa_block_shizuku_stopped">Shizuku service is not running: start it in the Shizuku app and retry</string>
+    <string name="sa_block_no_permission">Shizuku permission not granted: tap Allow in the dialog</string>
+    <string name="sa_block_three_button">Switch to gesture navigation first: the taller bar covers the 3-button keys</string>
+    <string name="wechat">WeChat: zwx-daylight</string>
+    <string name="sc_toggle_short">Toggle safe area</string>
+    <string name="sc_toggle_long">Quickly toggle the bottom safe area</string>
+    <string name="sc_desktop_short">No padding on Home</string>
+    <string name="sc_desktop_long">Keep Home unchanged, other apps keep the safe area</string>
+    <string name="sc_area_turn_on">Block system ads</string>
+    <string name="sc_area_turn_on_long">Turn on ad blocking</string>
+    <string name="sc_area_turn_off">Stop ad blocking</string>
+    <string name="sc_area_turn_off_long">Turn off ad blocking</string>
+    <string name="sc_desktop_exclude">No padding on Home</string>
+    <string name="sc_desktop_exclude_long">Keep only the launcher unchanged</string>
+    <string name="sc_desktop_keep_on">Pad Home too</string>
+    <string name="sc_desktop_keep_on_long">Give the launcher the safe area as well</string>
+    <string name="sc_desktop_excluded_toast">Set: launcher unchanged</string>
+    <string name="sc_desktop_included_toast">Set: launcher padded too</string>
+    <string name="sa_channel">Bottom safe area</string>
+    <string name="sa_notif_on">On — tap to turn off</string>
+    <string name="sa_notif_off">Off</string>
+    <string name="sa_notif_action_on">Turn on</string>
+    <string name="sa_notif_action_off">Turn off</string>
+    <string name="sa_state_ok">Shizuku connected, permission granted.</string>
+    <string name="sa_state_unknown">Checking Shizuku…</string>
+    <string name="sa_state_not_installed">Shizuku is not installed. It is needed to change the setting.</string>
+    <string name="sa_state_waiting">Shizuku service is not running. Start it in the Shizuku app.</string>
+    <string name="sa_state_no_permission">Shizuku permission not granted. Tap the button below.</string>
+    <string name="sa_master_sub">Raise the navigation bar so content is not flush</string>
+    <string name="state_off">Off</string>
+    <string name="state_on">On</string>
+    <string name="toast_need_permission">Grant the system-settings permission first</string>
+    <string name="toast_applied">Applied</string>
+    <string name="sa_notif_on_plain">Bottom safe area is on</string>
+    <string name="power_forever">Never (screen stays on)</string>
+    <string name="power_minutes">%1$d min</string>
+    <string name="power_seconds">%1$d s</string>
+    <string name="sa_status_on">On</string>
+    <string name="sa_line_title">Hide gesture hint line</string>
+    <string name="sa_line_sub">Removes the small bar at the bottom</string>
+    <string name="sa_line_auto_off">Hint line restored: hiding it makes the system drop the bottom space</string>
+    <string name="sa_area_auto_off">Safe area turned off: the two cannot work together</string>
+    <string name="sa_custom_height">Safe area height</string>
+    <string name="sa_height_system">System default</string>
+    <string name="ad_title">Block system ads</string>
+    <string name="ad_section">Ad blocking</string>
+    <string name="ad_master">Turn off system ads</string>
+    <string name="ad_master_sub">Blocks ad hosts locally, no server involved</string>
+    <string name="ad_status_on">On — ad hosts resolve to 0.0.0.0</string>
+    <string name="ad_status_off">Off</string>
+    <string name="ad_dns_label">Local filter</string>
+    <string name="ad_needs_shizuku">Shizuku is required to change system settings</string>
+    <string name="ad_toast_on">On: system ad hosts are blocked</string>
+    <string name="ad_toast_off">Off: ad blocking disabled</string>
+    <string name="ad_note">Blocks Xiaomi ad hosts through a local VPN (no server involved) and turns off the recommendation feed. In-app ads are GKD\'s job.</string>
+    <string name="ad_blocked_title">Blocked</string>
+    <string name="ad_row_hosts">Ad-serving hosts</string>
+    <string name="ad_row_track">Tracking hosts</string>
+    <string name="ad_row_switches">MIUI recommendation switches</string>
+    <string name="ad_count_unit"></string>
+    <string name="ad_verify">Verify blocking</string>
+    <string name="ad_verifying">Verifying…</string>
+    <string name="ad_verify_title">Verification result</string>
+    <string name="ad_verify_summary">Blocked %1$d of %2$d hosts</string>
+    <string name="ad_verify_normal_ok">www.baidu.com still resolves — normal browsing is unaffected.</string>
+    <string name="ad_verify_normal_bad">Note: a normal host failed to resolve. Try again later.</string>
+    <string name="ad_reboot_title">Reboot recommended</string>
+    <string name="ad_reboot_msg">Ad blocking is on. Reboot once so every app picks up the new DNS configuration.</string>
+    <string name="ad_reboot_later">Later</string>
+    <string name="power_forever_head">Always on</string>
+    <string name="power_forever_sub">Never turns off automatically</string>
+    <string name="power_timed_sub">Screen turns off after this time</string>
+    <string name="gkd_section">In-app ads</string>
+    <string name="gkd_title">GKD ad skipping</string>
+    <string name="gkd_desc">Splash and popup ads are handled by GKD. Version %s is bundled and ready to install.</string>
+    <string name="gkd_install">Install GKD</string>
+    <string name="gkd_installed">GKD installed (%s)</string>
+    <string name="gkd_copy_sub">Copy subscription link</string>
+    <string name="gkd_copied">Subscription link copied</string>
+    <string name="gkd_install_failed">Install failed: %s</string>
+    <string name="gkd_note">本应用不提供 GKD 使用教程，请自行探索。
+官网：https://gkd.li/</string>
+    <string name="gkd_warn">Note: if the installer warns about network problems, tap Continue — ad blocking also blocks MIUI\'s online check.</string>
+    <string name="env_zhuoyi_title">Compatibility notice</string>
+    <string name="env_zhuoyi_msg">This app is running inside ZhuoYiTong, an Android virtual machine on HarmonyOS.
+
+System-level features such as Shizuku may not work there.
+
+For full functionality, install the app directly on the device.</string>
+    <string name="ad_not_applicable">not on this ROM</string>
+    <string name="sa_shizuku_note">This app does not teach Shizuku. Official site: https://shizuku.rikka.app/</string>
+    <string name="ad_err_unreachable">Cannot reach the ad-blocking server on this network. Nothing was changed.</string>
+    <string name="ad_err_broken">The ad-blocking server is unstable, so the previous settings were restored.</string>
+    <string name="sa_authorize">Authorise Shizuku</string>
+    <string name="sa_start_service">Shizuku service is not running — start it in the Shizuku app first</string>
+    <string name="ad_err_unreachable_rec">The ad-blocking server is unreachable on this network. MIUI recommendation switches were turned off; DNS blocking was not enabled. Retry with a proxy.</string>
+    <string name="ad_force_title">Try anyway?</string>
+    <string name="ad_force_msg">The ad-blocking server (dns.adguard.com:443) is not reachable from this network.\n\nIf you are on a proxy it may still connect.\n\nIf it truly cannot connect, the previous settings are restored automatically after a few seconds.</string>
+    <string name="ad_force_yes">Try anyway</string>
+    <string name="ad_force_no">Cancel</string>
+    <string name="vpn_noti_title">Local ad filter</string>
+    <string name="vpn_noti_text">Blocking %1$d ad hosts</string>
+    <string name="vpn_starting">Starting local filter…</string>
+    <string name="vpn_stopping">Local filter stopped</string>
+    <string name="vpn_denied">VPN permission denied — the filter cannot run</string>
+    <string name="ad_big_title">Full blocklist</string>
+    <string name="ad_big_sub">~190k domains, wider coverage (experimental)</string>
+    <string name="ad_big_loading">Loading blocklist…</string>
+    <string name="ad_big_ready">Blocklist loaded: %1$d entries</string>
+    <string name="ad_big_off">Full blocklist off</string>
+    <string name="sc_turned_off">Turned off</string>
+    <string name="ad_limit_note">Some ads (built-in slots in Calendar or Weather) cannot be blocked at the network layer. Use GKD, or turn off recommendations in that app\'s settings.</string>
+    <string name="sa_install">Install Shizuku</string>
+    <string name="guide_title">One-time setup</string>
+    <string name="guide_body">Screen control needs permission to change system settings.\n\nRecommended: install Shizuku, then tap Authorise in this app — no computer required.</string>
+    <string name="guide_hint">Shizuku is an open-source permission tool. It is bundled with this app; tap the button below to install it.</string>
+    <string name="guide_install_shizuku">Install Shizuku</string>
+    <string name="guide_other_way">Other ways</string>
+    <string name="guide_later">Later</string>
+    <string name="guide_manual_title">Authorise via computer</string>
+    <string name="guide_manual_body">If you prefer not to install Shizuku, connect USB and run this command once.</string>
+    <string name="block_no_shizuku">Shizuku is not installed — tap Install Shizuku above</string>
+    <string name="block_service_stopped">Shizuku service is not running — open Shizuku and tap Start</string>
+    <string name="block_not_authorized">Tap Authorise Shizuku above to grant access</string>
+    <string name="block_unknown">Could not write the system setting, try again</string>
+    <string name="guide_body_installed">Screen control needs permission to change system settings.\n\nShizuku is installed — tap Start in Shizuku, then come back and tap Authorise.</string>
+    <string name="guide_hint_installed">Once the service is running this app grants itself, no computer needed.</string>
+    <string name="guide_open_shizuku">Open Shizuku</string>
+</resources>

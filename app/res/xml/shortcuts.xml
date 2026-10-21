@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="toggle_safe_area"
+        android:enabled="true"
+        android:icon="@drawable/ic_tab_area"
+        android:shortcutShortLabel="@string/sc_toggle_short"
+        android:shortcutLongLabel="@string/sc_toggle_long">
+        <intent
+            android:action="com.tuoyu.clean.TOGGLE_SAFE_AREA"
+            android:targetPackage="com.tuoyu.clean"
+            android:targetClass="com.tuoyu.clean.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="desktop_no_padding"
+        android:enabled="true"
+        android:icon="@drawable/ic_tab_home"
+        android:shortcutShortLabel="@string/sc_desktop_short"
+        android:shortcutLongLabel="@string/sc_desktop_long">
+        <intent
+            android:action="com.tuoyu.clean.DESKTOP_NO_PADDING"
+            android:targetPackage="com.tuoyu.clean"
+            android:targetClass="com.tuoyu.clean.MainActivity" />
+    </shortcut>
+</shortcuts>

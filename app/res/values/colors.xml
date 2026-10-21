@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FF101114</color>
+    <color name="card">#FF1A1C20</color>
+    <color name="card_off">#FF17181C</color>
+    <color name="text">#FFF3F4F6</color>
+    <color name="text_dim">#FF8A8F98</color>
+    <color name="accent">#FFFFB020</color>
+    <color name="accent_press">#FFE09A18</color>
+    <color name="dot_off">#FF3A3F49</color>
+    <color name="icon_bg">#FFFFB020</color>
+    <color name="icon_fg">#FF1A1206</color>
+</resources>

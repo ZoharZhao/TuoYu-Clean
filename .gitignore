@@ -1,0 +1,22 @@
+# build artefacts
+build/
+dist/
+
+# signing material — never commit a keystore
+keystore/
+*.jks
+*.keystore
+
+# fetched dependencies (run tools/fetch_libs.py)
+libs/
+
+# python
+__pycache__/
+*.pyc
+
+# editor / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

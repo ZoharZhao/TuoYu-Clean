@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 2x2 grid: apps tab -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M4.2,3.4 h5.1 a1.4,1.4 0,0 1,1.4 1.4 v5.1 a1.4,1.4 0,0 1,-1.4 1.4 H4.2 a1.4,1.4 0,0 1,-1.4 -1.4 V4.8 a1.4,1.4 0,0 1,1.4 -1.4 z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M14.7,3.4 h5.1 a1.4,1.4 0,0 1,1.4 1.4 v5.1 a1.4,1.4 0,0 1,-1.4 1.4 h-5.1 a1.4,1.4 0,0 1,-1.4 -1.4 V4.8 a1.4,1.4 0,0 1,1.4 -1.4 z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M4.2,13.9 h5.1 a1.4,1.4 0,0 1,1.4 1.4 v5.1 a1.4,1.4 0,0 1,-1.4 1.4 H4.2 a1.4,1.4 0,0 1,-1.4 -1.4 v-5.1 a1.4,1.4 0,0 1,1.4 -1.4 z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M14.7,13.9 h5.1 a1.4,1.4 0,0 1,1.4 1.4 v5.1 a1.4,1.4 0,0 1,-1.4 1.4 h-5.1 a1.4,1.4 0,0 1,-1.4 -1.4 v-5.1 a1.4,1.4 0,0 1,1.4 -1.4 z" />
+</vector>
