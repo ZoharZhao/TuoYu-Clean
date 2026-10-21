@@ -2,9 +2,13 @@
 
 [简体中文](README.md) | [繁體中文](README.zh-TW.md) | [English](README.en.md)
 
-A small utility for Xiaomi / Redmi devices that solves two everyday annoyances: **keeping the screen awake**, and **removing the ads baked into the system**.
+A small utility for Xiaomi / Redmi and other Android devices that solves two everyday annoyances: **keeping the screen awake**, and **removing the ads baked into the system**.
 
 No root, no custom ROM, just install and use.
+
+`Shizuku` is required for this app to work.
+
+Note: I only have two Redmi phones (K60 and Note 14) to test with, so I can't say for sure whether every ad can be turned off on other Android devices. On Redmi, most built-in system ads can be switched off; in practice only the dynamic ads in `Calendar` remain. Cold-start ads inside third-party apps are handled well by GKD.
 
 ---
 
