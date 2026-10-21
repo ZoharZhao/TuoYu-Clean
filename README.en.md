@@ -302,9 +302,19 @@ python tools/version.py read
 
 ### Releasing
 
-1. Build to get `dist/托予净化-x.y.z.apk`
-2. Create a tag `vx.y.z` on GitHub
-3. Create a release for that tag and attach the APK
+```bash
+python tools/make_keystore.py     # first time
+python Makefile.py                # builds dist/托予净化-x.y.z.apk
+git tag -a vx.y.z -m "vx.y.z" && git push origin vx.y.z
+python tools/release.py           # creates the release and uploads the APK
+```
+
+`tools/release.py` reads `version.txt`, uses the GitHub token stored in your git
+credentials, creates the matching release (or reuses it), and uploads the APK as
+`TuoYuClean-x.y.z.apk`.
+
+> The ASCII asset name is deliberate: GitHub's upload endpoint drops non-ASCII
+> characters from the URL, so a Chinese filename arrives as `-1.0.0.apk`.
 
 GitHub recognises `.apk` assets automatically and shows the Android package icon.
 

@@ -302,9 +302,18 @@ python tools/version.py read
 
 ### 發佈
 
-1. 建置得到 `dist/托予淨化-x.y.z.apk`
-2. 在 GitHub 上建立 tag `vx.y.z`
-3. 在 Releases 頁面新建 release，選擇該 tag，把 APK 作為附件上傳
+```bash
+python tools/make_keystore.py     # 首次
+python Makefile.py                # 建置 dist/托予淨化-x.y.z.apk
+git tag -a vx.y.z -m "vx.y.z" && git push origin vx.y.z
+python tools/release.py           # 建立 release 並上傳 APK
+```
+
+`tools/release.py` 會讀取 `version.txt`，用 git 憑證裡的 GitHub token 呼叫 API：
+建立對應的 release（已存在則沿用），並把 APK 以 `TuoYuClean-x.y.z.apk` 上傳。
+
+> 附件名稱用 ASCII 是刻意的 —— GitHub 的上傳介面會丟掉 URL 裡的非 ASCII 字元，
+> 中文名稱上傳後會變成 `-1.0.0.apk`。
 
 GitHub 會自動把 `.apk` 辨識為 Android 安裝檔並提供對應圖示。
 
